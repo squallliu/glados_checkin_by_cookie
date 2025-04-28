@@ -34,5 +34,3 @@ jobs:
         
         env:
           COOKIE: ${{ secrets.COOKIE }}
-
-      - uses: gautamkrishnar/keepalive-workflow@master
