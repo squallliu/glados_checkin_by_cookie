@@ -16,10 +16,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    permissions:
-      actions: write
-      contents: write
-
     steps:
       - uses: actions/checkout@v4
       
@@ -39,4 +35,4 @@ jobs:
         env:
           COOKIE: ${{ secrets.COOKIE }}
 
-      - uses: gautamkrishnar/keepalive-workflow@v4
+      #- uses: gautamkrishnar/keepalive-workflow@v2
