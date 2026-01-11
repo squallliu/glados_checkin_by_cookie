@@ -8,7 +8,7 @@ import requests
 import json
 import os
 COOKIE = os.environ.get('COOKIE')
-url = "https://glados.rocks/api/user/checkin"
+url = "https://glados.one/api/user/checkin"
 payload = {
     'token': 'glados.one'
 }
@@ -24,3 +24,4 @@ response = requests.post(url, headers=headers, data=data)
 
 print(response.status_code)
 print(response.text)
+
